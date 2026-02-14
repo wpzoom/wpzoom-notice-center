@@ -16,14 +16,14 @@ In your main plugin file, load the module only in the admin and set asset URLs t
 
 ```php
 // WPZOOM Notice Center (submodule).
-$nc_path = plugin_dir_path( __FILE__ ) . 'wpzoom-notice-center/';
-$nc_url  = plugin_dir_url( __FILE__ ) . 'wpzoom-notice-center/';
+$wpz_notice_center_path = plugin_dir_path( __FILE__ ) . 'wpzoom-notice-center/';
+$wpz_notice_center_url  = plugin_dir_url( __FILE__ ) . 'wpzoom-notice-center/';
 
-if ( is_admin() && ! class_exists( 'WPZOOM_Notice_Center' ) && file_exists( $nc_path . 'notice-center.php' ) ) {
-	require_once $nc_path . 'notice-center.php';
+if ( is_admin() && ! class_exists( 'WPZOOM_Notice_Center' ) && file_exists( $wpz_notice_center_path . 'notice-center.php' ) ) {
+	require_once $wpz_notice_center_path . 'notice-center.php';
 	WPZOOM_Notice_Center::get_instance()->set_assets( array(
-		'css_url' => $nc_url . 'assets/notice-center.css',
-		'js_url'  => $nc_url . 'assets/notice-center.js',
+		'css_url' => $wpz_notice_center_url . 'assets/notice-center.css',
+		'js_url'  => $wpz_notice_center_url . 'assets/notice-center.js',
 	) );
 }
 ```
