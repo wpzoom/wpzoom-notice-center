@@ -179,7 +179,7 @@ if ( ! class_exists( 'WPZOOM_Notice_Center' ) ) {
 
 				<div class="wpzoom-nc-header">
 					<div class="wpzoom-nc-header__left">
-						<span class="wpzoom-nc-header__title"><?php esc_html_e( 'WPZOOM Notice Center', 'wpzoom-notice-center' ); ?></span>
+						<span class="wpzoom-nc-header__title"><span style="color: #2b6;">•</span> <?php esc_html_e( 'WPZOOM Notice Center', 'instagram-widget-by-wpzoom' ); ?></span>
 						<span class="wpzoom-nc-header__subtitle"><?php esc_html_e( 'Stay updated with the latest from WPZOOM products and services!', 'wpzoom-notice-center' ); ?></span>
 					</div>
 					<div class="wpzoom-nc-header__right">
