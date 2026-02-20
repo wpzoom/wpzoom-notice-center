@@ -5,9 +5,9 @@
  * @version 1.0.0
  */
 
-/* ──────────────────────────────────────────────
+/* ----------------------------------------------
    Variables (matching _variables.scss)
-   ────────────────────────────────────────────── */
+   ---------------------------------------------- */
 :root {
 	--wpzoom-nc-primary: #242628;
 	--wpzoom-nc-primary-hover: #414446;
@@ -22,9 +22,9 @@
 	--wpzoom-nc-header: #3b65d2;
 }
 
-/* ──────────────────────────────────────────────
+/* ----------------------------------------------
    Carousel container
-   ────────────────────────────────────────────── */
+   ---------------------------------------------- */
 .notice.wpzoom-notice-center {
 	margin: 15px 0;
 	padding: 0;
@@ -35,7 +35,7 @@
 	border-radius: 5px 5px 0 0
 }
 
-/* ── Header ────────────────────────────────── */
+/* -- Header ---------------------------------- */
 .wpzoom-nc-header {
 	display: flex;
 	align-items: center;
@@ -91,7 +91,7 @@
 	height: 20px;
 }
 
-/* ── Body / Slides ─────────────────────────── */
+/* -- Body / Slides --------------------------- */
 .wpzoom-nc-body {
 	background: var(--wpzoom-nc-white);
 }
@@ -181,7 +181,7 @@
 	list-style: decimal;
 }
 
-/* ── Buttons ───────────────────────────────── */
+/* -- Buttons --------------------------------- */
 .wpzoom-nc-buttons {
 	margin-top: 12px;
 	display: flex;
@@ -221,7 +221,7 @@
 	background-color: rgba(36, 38, 40, 0.06);
 }
 
-/* ── Footer ────────────────────────────────── */
+/* -- Footer ---------------------------------- */
 .wpzoom-nc-footer {
 	display: flex;
 	align-items: center;
@@ -258,7 +258,7 @@
 	background: #5e6164;
 }
 
-/* ── Single notice (1 notice mode) ──────────── */
+/* -- Single notice (1 notice mode) ------------ */
 .wpzoom-notice-single {
 	position: relative;
 	border-left: 4px solid var(--wpzoom-nc-primary);
@@ -305,7 +305,7 @@
 	margin-bottom: 10px;
 }
 
-/* ── Responsive ────────────────────────────── */
+/* -- Responsive ------------------------------ */
 @media screen and (max-width: 782px) {
 	.wpzoom-nc-header__left {
 		flex-direction: column;
