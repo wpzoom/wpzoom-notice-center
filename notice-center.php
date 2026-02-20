@@ -250,9 +250,12 @@ if ( ! class_exists( 'WPZOOM_Notice_Center' ) ) {
 			}
 			$dashicon = $is_obj ? ( ! empty( $icon['dashicon'] ) ? $icon['dashicon'] : '' ) : ( is_string( $icon ) ? $icon : '' );
 			$img_src  = $is_obj ? ( ! empty( $icon['src'] ) ? $icon['src'] : '' ) : ( is_string( $icon ) ? $icon : '' );
+			$svg      = $is_obj && ! empty( $icon['svg'] ) ? $icon['svg'] : '';
 			?>
 			<div class="<?php echo esc_attr( $css_class ); ?>"<?php echo $style; ?>>
-				<?php if ( 'dashicon' === $type && $dashicon ) : ?>
+				<?php if ( $svg ) : ?>
+					<?php echo $svg; ?>
+				<?php elseif ( 'dashicon' === $type && $dashicon ) : ?>
 					<span class="dashicons <?php echo esc_attr( $dashicon ); ?>"></span>
 				<?php elseif ( $img_src ) : ?>
 					<img src="<?php echo esc_url( $img_src ); ?>" alt="" />
