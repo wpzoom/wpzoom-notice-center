@@ -336,6 +336,10 @@ if ( ! class_exists( 'WPZOOM_Notice_Center' ) ) {
 				wp_send_json_error( 'Not logged in.' );
 			}
 
+			if ( ! current_user_can( 'edit_posts' ) ) {
+				wp_send_json_error( 'Insufficient permissions.', 403 );
+			}
+
 			$dismissed = get_user_meta( $user_id, $this->meta_key, true );
 			if ( ! is_array( $dismissed ) ) {
 				$dismissed = array();
